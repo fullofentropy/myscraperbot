@@ -1,0 +1,41 @@
+{
+	"name": "Python Project Dev Space",
+	"dockerComposeFile": ["./docker-compose.yml"],
+
+	"service": "deployedContainer",
+	"workspaceFolder": "/workspace/GITwork/",
+	"shutdownAction": "stopCompose",
+
+	"extensions": [
+		"ms-python.python",
+		"gruntfuggly.todo-tree",
+		"streetsidesoftware.code-spell-checker"
+	],
+	"settings": {
+		"python.pythonPath": "/usr/bin/python3",
+		"python.linting.pylintEnabled": true,
+		"python.linting.enabled": true,
+		"python.linting.pylintPath": "/usr/local/bin/pylint",
+		"python.editor.detectIndentation": false,
+		"python.editor.insertSpaces": true,
+		"python.editor.tabSize": 4,
+		"terminal.integrated.profiles.windows": {
+			"Git Bash": {
+				"source":"Git Bash"
+			},
+			"PowerShell -NoProfile": {
+			  "source": "PowerShell",
+			  "args": ["-NoProfile"]
+			}
+		  },
+		  "terminal.integrated.profiles.linux": {
+			"zsh (login)": {
+			  "path": "zsh",
+			  "args": ["-l"]
+			}
+		  }
+
+	},
+
+	"remoteUser": "pythonuser"
+}
