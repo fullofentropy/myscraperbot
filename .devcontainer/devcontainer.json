@@ -1,5 +1,9 @@
 {
 	"name": "Python 3",
+	// Consider building the image seperately and executing a docker-compose 
+	// with a seperate image generation
+	// .gitattributes file was added to add flexability of using devcontainers 
+	// features with WSL, or other docker context variations
 	"build": {
 		"dockerfile": "Dockerfile",
 		"context": "..",
